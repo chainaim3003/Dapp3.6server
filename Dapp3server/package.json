@@ -12,7 +12,11 @@
     "sync-only": "npm run build && node dist/server.js",
     "async-only": "npm run build && node dist/async-server.js",
     "clean": "rm -rf dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "npm run build",
+    "vercel-dev": "npm run dev",
+    "deploy": "vercel --prod",
+    "deploy-preview": "vercel"
   },
   "keywords": [
     "zero-knowledge",

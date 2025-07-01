@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "name": "zk-pret-http-server",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node@3"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/dist/unified-server.js"
+    },
+    {
+      "src": "/ws",
+      "dest": "/dist/unified-server.js"
+    },
+    {
+      "src": "/health",
+      "dest": "/dist/unified-server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dist/unified-server.js"
+    }
+  ],
+  "functions": {
+    "dist/unified-server.js": {
+      "runtime": "@vercel/node@3",
+      "memory": 1024,
+      "maxDuration": 300
+    }
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "ZK_PRET_HTTP_SERVER_HOST": "0.0.0.0"
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ]
+}
