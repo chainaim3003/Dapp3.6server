@@ -64,16 +64,16 @@ class AsyncJobManager {
       this.broadcastJobUpdate(job);
 
       logger.info(`Starting async job ${job.id}: ${job.toolName}`);
-      
+
       // Initial setup progress
       job.progress = 10;
       this.broadcastJobUpdate(job);
-      
+
       // Execute the actual tool with real-time progress
       const startTime = Date.now();
       const result = await zkToolExecutor.executeTool(job.toolName, job.parameters);
       const executionTime = Date.now() - startTime;
-      
+
       job.status = 'completed';
       job.result = {
         ...result,
@@ -91,7 +91,7 @@ class AsyncJobManager {
       job.status = 'failed';
       job.error = error instanceof Error ? error.message : 'Unknown error';
       job.endTime = new Date();
-      
+
       logger.error(`Async job ${job.id} failed:`, error);
     }
 
@@ -126,7 +126,7 @@ class AsyncJobManager {
   }
 
   getActiveJobs(): Job[] {
-    return Array.from(this.jobs.values()).filter(job => 
+    return Array.from(this.jobs.values()).filter(job =>
       job.status === 'pending' || job.status === 'running'
     );
   }
@@ -185,7 +185,7 @@ app.use((req, res, next) => {
 // WebSocket connection handling
 wss.on('connection', (ws) => {
   logger.info('New WebSocket connection established');
-  
+
   ws.on('message', (message) => {
     try {
       const data = JSON.parse(message.toString());
@@ -212,7 +212,7 @@ wss.on('connection', (ws) => {
 app.get('/api/v1/health', async (req, res) => {
   try {
     const executorHealth = await zkToolExecutor.healthCheck();
-    
+
     res.json({
       status: executorHealth.connected ? 'healthy' : 'degraded',
       timestamp: new Date().toISOString(),
@@ -243,7 +243,7 @@ app.get('/api/v1/health', async (req, res) => {
 app.get('/api/v1/tools', async (req, res) => {
   try {
     const tools = zkToolExecutor.getAvailableTools();
-    
+
     res.json({
       success: true,
       tools,
@@ -266,10 +266,10 @@ app.get('/api/v1/tools', async (req, res) => {
 // Execute tool (synchronous - same as sync server)
 app.post('/api/v1/tools/execute', async (req, res) => {
   const startTime = Date.now();
-  
+
   try {
     const { toolName, parameters } = req.body;
-    
+
     if (!toolName) {
       return res.status(400).json({
         success: false,
@@ -277,16 +277,16 @@ app.post('/api/v1/tools/execute', async (req, res) => {
         timestamp: new Date().toISOString()
       });
     }
-    
+
     logger.info('Tool execution started', {
       toolName,
       parameters: JSON.stringify(parameters),
       mode: 'sync-on-async-server'
     });
-    
+
     const result = await zkToolExecutor.executeTool(toolName, parameters || {});
     const totalTime = Date.now() - startTime;
-    
+
     logger.info('Tool execution completed', {
       toolName,
       success: result.success,
@@ -294,7 +294,7 @@ app.post('/api/v1/tools/execute', async (req, res) => {
       totalTime: `${totalTime}ms`,
       mode: 'sync-on-async-server'
     });
-    
+
     return res.json({
       success: result.success,
       toolName,
@@ -306,17 +306,17 @@ app.post('/api/v1/tools/execute', async (req, res) => {
       server: 'zk-pret-http-server',
       mode: 'sync-on-async-server'
     });
-    
+
   } catch (error) {
     const totalTime = Date.now() - startTime;
-    
+
     logger.error('Tool execution failed', {
       toolName: req.body?.toolName,
       error: error instanceof Error ? error.message : String(error),
       totalTime: `${totalTime}ms`,
       mode: 'sync-on-async-server'
     });
-    
+
     return res.status(500).json({
       success: false,
       toolName: req.body?.toolName,
@@ -333,7 +333,7 @@ app.post('/api/v1/tools/execute', async (req, res) => {
 // Async job management endpoints
 app.post('/api/v1/jobs/start', async (req, res) => {
   if (process.env.ENABLE_ASYNC_JOBS !== 'true') {
-    return res.status(400).json({ 
+    return res.status(400).json({
       success: false,
       error: 'Async jobs are disabled',
       message: 'Set ENABLE_ASYNC_JOBS=true to use async execution',
@@ -343,7 +343,7 @@ app.post('/api/v1/jobs/start', async (req, res) => {
 
   try {
     const { jobId, toolName, parameters } = req.body;
-    
+
     if (!toolName) {
       return res.status(400).json({
         success: false,
@@ -351,11 +351,11 @@ app.post('/api/v1/jobs/start', async (req, res) => {
         timestamp: new Date().toISOString()
       });
     }
-    
+
     const actualJobId = jobId || generateJobId();
-    
+
     const job = await jobManager.startJob(actualJobId, toolName, parameters || {});
-    
+
     return res.json({
       success: true,
       jobId: job.id,
@@ -367,7 +367,7 @@ app.post('/api/v1/jobs/start', async (req, res) => {
       mode: 'async'
     });
   } catch (error) {
-    return res.status(500).json({ 
+    return res.status(500).json({
       success: false,
       error: 'Failed to start async job',
       message: error instanceof Error ? error.message : 'Unknown error',
@@ -379,14 +379,14 @@ app.post('/api/v1/jobs/start', async (req, res) => {
 app.get('/api/v1/jobs/:jobId', (req, res) => {
   const job = jobManager.getJob(req.params.jobId);
   if (!job) {
-    return res.status(404).json({ 
+    return res.status(404).json({
       success: false,
       error: 'Job not found',
       jobId: req.params.jobId,
       timestamp: new Date().toISOString()
     });
   }
-  
+
   return res.json({
     success: true,
     job,
@@ -411,7 +411,7 @@ app.get('/api/v1/jobs', (req, res) => {
 
 app.delete('/api/v1/jobs/completed', (req, res) => {
   jobManager.clearCompletedJobs();
-  res.json({ 
+  res.json({
     success: true,
     message: 'Completed jobs cleared',
     timestamp: new Date().toISOString(),
@@ -424,7 +424,7 @@ app.delete('/api/v1/jobs/completed', (req, res) => {
 app.get('/api/v1/status', async (req, res) => {
   try {
     const executorHealth = await zkToolExecutor.healthCheck();
-    
+
     res.json({
       server: 'zk-pret-http-server',
       version: '1.0.0',
@@ -472,7 +472,7 @@ app.use((error: any, req: express.Request, res: express.Response, next: express.
     url: req.url,
     method: req.method
   });
-  
+
   res.status(500).json({
     success: false,
     error: 'Internal server error',
@@ -498,7 +498,7 @@ const startServer = async () => {
   try {
     // Initialize ZK Tool Executor
     await zkToolExecutor.initialize();
-    
+
     server.listen(ZK_PRET_HTTP_SERVER_PORT, ZK_PRET_HTTP_SERVER_HOST, () => {
       logger.info(`🚀 ZK-PRET HTTP Server (Async) started successfully`);
       logger.info(`📡 Server URL: http://${ZK_PRET_HTTP_SERVER_HOST}:${ZK_PRET_HTTP_SERVER_PORT}`);
@@ -506,7 +506,7 @@ const startServer = async () => {
       logger.info(`📡 WebSocket URL: ws://${ZK_PRET_HTTP_SERVER_HOST}:${ZK_PRET_HTTP_SERVER_PORT}`);
       logger.info(`⚡ Features: Same tools as STDIO mode but via HTTP API + Async jobs`);
       logger.info(`🎯 Ready to process ZK-PRET tool requests`);
-      
+
       console.log('\n=== ZK-PRET HTTP SERVER (ASYNC) ENDPOINTS ===');
       console.log(`GET  http://${ZK_PRET_HTTP_SERVER_HOST}:${ZK_PRET_HTTP_SERVER_PORT}/api/v1/health`);
       console.log(`GET  http://${ZK_PRET_HTTP_SERVER_HOST}:${ZK_PRET_HTTP_SERVER_PORT}/api/v1/tools`);

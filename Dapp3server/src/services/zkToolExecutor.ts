@@ -30,7 +30,7 @@ export class ZKToolExecutor {
     console.log('DEBUG: process.env.ZK_PRET_STDIO_PATH =', process.env.ZK_PRET_STDIO_PATH);
 
     this.config = {
-      stdioPath: process.env.ZK_PRET_STDIO_PATH || 'C:\\CHAINAIM3003\\mcp-servers\\zk-pret-test-v3.6',
+      stdioPath: process.env.ZK_PRET_STDIO_PATH || 'C:\\CHAINAIM3003\\mcp-servers\\Dapp3.6-pret-test',
       stdioBuildPath: process.env.ZK_PRET_STDIO_BUILD_PATH || './build/tests/with-sign',
       timeout: parseInt(process.env.ZK_PRET_SERVER_TIMEOUT || '1800000')
     };

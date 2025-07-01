@@ -3089,3 +3089,138 @@
 {"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-06-30T04:43:26.634Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
 {"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-06-30T04:43:56.645Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
 {"level":"info","message":"SIGINT received, shutting down gracefully","service":"zk-pret-http-server","timestamp":"2025-06-30T04:44:15.240Z"}
+{"level":"info","message":"Async job management enabled","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:15.358Z"}
+{"level":"info","message":"ZK Tool Executor initialized successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:15.401Z"}
+{"level":"info","message":"🚀 ZK-PRET Unified HTTP Server started successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:15.454Z"}
+{"level":"info","message":"📡 Server URL: http://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:15.457Z"}
+{"level":"info","message":"🔄 Mode: Unified (Sync + Async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:15.460Z"}
+{"level":"info","message":"📡 WebSocket URL: ws://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:15.461Z"}
+{"level":"info","message":"⚡ Features: All ZK-PRET tools via HTTP API (sync & async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:15.461Z"}
+{"level":"info","message":"🎯 Ready to process ZK-PRET tool requests","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:15.462Z"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:30.192Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:30.222Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:30.233Z","url":"/api/v1/health","userAgent":"ZK-PRET-UNIFIED-APP/1.0.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:11:41.166Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:12:00.237Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:12:30.238Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:00.259Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:10.897Z"}
+{"level":"info","message":"Async job management enabled","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:19.091Z"}
+{"level":"info","message":"ZK Tool Executor initialized successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:19.118Z"}
+{"level":"info","message":"🚀 ZK-PRET Unified HTTP Server started successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:19.163Z"}
+{"level":"info","message":"📡 Server URL: http://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:19.164Z"}
+{"level":"info","message":"🔄 Mode: Unified (Sync + Async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:19.165Z"}
+{"level":"info","message":"📡 WebSocket URL: ws://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:19.165Z"}
+{"level":"info","message":"⚡ Features: All ZK-PRET tools via HTTP API (sync & async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:19.166Z"}
+{"level":"info","message":"🎯 Ready to process ZK-PRET tool requests","service":"zk-pret-http-server","timestamp":"2025-07-01T04:13:19.166Z"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:14:33.143Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:14:33.183Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:14:33.192Z","url":"/api/v1/health","userAgent":"ZK-PRET-UNIFIED-APP/1.0.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:14:42.393Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:15:03.206Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:15:33.205Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:16:03.233Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:16:33.227Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:17:03.332Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:17:33.290Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:18:03.293Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:18:33.294Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:19:03.302Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:19:33.302Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:20:03.318Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:20:33.326Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:20:54.192Z"}
+{"level":"info","message":"Async job management enabled","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:02.895Z"}
+{"level":"info","message":"ZK Tool Executor initialized successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:02.955Z"}
+{"level":"info","message":"🚀 ZK-PRET Unified HTTP Server started successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:03.003Z"}
+{"level":"info","message":"📡 Server URL: http://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:03.005Z"}
+{"level":"info","message":"🔄 Mode: Unified (Sync + Async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:03.007Z"}
+{"level":"info","message":"📡 WebSocket URL: ws://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:03.008Z"}
+{"level":"info","message":"⚡ Features: All ZK-PRET tools via HTTP API (sync & async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:03.014Z"}
+{"level":"info","message":"🎯 Ready to process ZK-PRET tool requests","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:03.017Z"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:03.355Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:33.347Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:21:59.133Z"}
+{"level":"info","message":"Async job management enabled","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:20.246Z"}
+{"level":"info","message":"ZK Tool Executor initialized successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:20.286Z"}
+{"level":"info","message":"🚀 ZK-PRET Unified HTTP Server started successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:20.322Z"}
+{"level":"info","message":"📡 Server URL: http://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:20.322Z"}
+{"level":"info","message":"🔄 Mode: Unified (Sync + Async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:20.323Z"}
+{"level":"info","message":"📡 WebSocket URL: ws://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:20.324Z"}
+{"level":"info","message":"⚡ Features: All ZK-PRET tools via HTTP API (sync & async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:20.324Z"}
+{"level":"info","message":"🎯 Ready to process ZK-PRET tool requests","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:20.325Z"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:33.367Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:53.442Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:53.471Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:22:53.490Z","url":"/api/v1/health","userAgent":"ZK-PRET-UNIFIED-APP/1.0.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:23:02.721Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:23:23.503Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:23:53.504Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:24:23.512Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:24:53.513Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:25:23.517Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:25:53.530Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:26:23.542Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:26:53.545Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:27:23.559Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:27:46.875Z"}
+{"level":"info","message":"Async job management enabled","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:09.777Z"}
+{"level":"info","message":"ZK Tool Executor initialized successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:09.816Z"}
+{"level":"info","message":"🚀 ZK-PRET Unified HTTP Server started successfully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:09.865Z"}
+{"level":"info","message":"📡 Server URL: http://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:09.867Z"}
+{"level":"info","message":"🔄 Mode: Unified (Sync + Async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:09.868Z"}
+{"level":"info","message":"📡 WebSocket URL: ws://localhost:3001","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:09.871Z"}
+{"level":"info","message":"⚡ Features: All ZK-PRET tools via HTTP API (sync & async)","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:09.873Z"}
+{"level":"info","message":"🎯 Ready to process ZK-PRET tool requests","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:09.874Z"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:16.212Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:16.245Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:16.274Z","url":"/api/v1/health","userAgent":"ZK-PRET-UNIFIED-APP/1.0.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:32.987Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"POST","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:42.974Z","url":"/api/v1/tools/execute","userAgent":"ZK-PRET-UNIFIED-APP/1.0.0"}
+{"level":"info","message":"SYNC execution started","mode":"sync-unified","parameters":"{\"companyName\":\"SREE PALANI ANDAVAR AGROS PRIVATE LIMITED\",\"typeOfNet\":\"TESTNET\"}","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:42.976Z","toolName":"get-GLEIF-verification-with-sign"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:31:46.309Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:32:16.302Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:32:46.314Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:33:16.331Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:33:46.349Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:34:16.367Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:34:46.391Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:35:16.405Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:35:46.427Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:36:16.423Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:36:46.435Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:37:16.455Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:37:46.467Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:38:16.487Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:38:46.486Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:39:16.501Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:39:46.512Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"executionTime":"498024ms","level":"info","message":"SYNC execution completed","mode":"sync-unified","service":"zk-pret-http-server","success":true,"timestamp":"2025-07-01T04:40:01.013Z","toolName":"get-GLEIF-verification-with-sign","totalTime":"498037ms"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:40:16.525Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:40:46.543Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"POST","service":"zk-pret-http-server","timestamp":"2025-07-01T04:41:04.675Z","url":"/api/v1/tools/execute","userAgent":"ZK-PRET-UNIFIED-APP/1.0.0"}
+{"level":"info","message":"SYNC execution started","mode":"sync-unified","parameters":"{\"companyName\":\"SREE PALANI ANDAVAR AGROS PRIVATE LIMITED\",\"typeOfNet\":\"TESTNET\"}","service":"zk-pret-http-server","timestamp":"2025-07-01T04:41:04.678Z","toolName":"get-EXIM-verification-with-sign"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:41:16.565Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:41:46.583Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:42:16.598Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:42:46.601Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:43:16.606Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:43:46.608Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:44:16.637Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:44:46.656Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:45:16.660Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:45:46.704Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:46:16.730Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:46:46.708Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:47:16.729Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:47:46.728Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:48:16.741Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:48:46.741Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:49:16.779Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:49:46.769Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:50:16.800Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"executionTime":"556957ms","level":"info","message":"SYNC execution completed","mode":"sync-unified","service":"zk-pret-http-server","success":true,"timestamp":"2025-07-01T04:50:21.643Z","toolName":"get-EXIM-verification-with-sign","totalTime":"556965ms"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:50:46.801Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:51:16.801Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"ip":"::1","level":"info","message":"HTTP Request","method":"GET","service":"zk-pret-http-server","timestamp":"2025-07-01T04:51:46.811Z","url":"/api/v1/health","userAgent":"axios/1.9.0"}
+{"level":"info","message":"SIGINT received, shutting down gracefully","service":"zk-pret-http-server","timestamp":"2025-07-01T04:52:09.053Z"}
