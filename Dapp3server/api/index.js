@@ -8,9 +8,11 @@ export default function handler(req, res) {
     return res.status(200).end();
   }
 
-  // Route based on URL path
+  // Get the full URL path
   const { url } = req;
+  console.log('Request URL:', url); // For debugging
 
+  // Route handling
   if (url === '/api/health' || url === '/health') {
     return res.status(200).json({
       status: 'healthy',
@@ -36,13 +38,20 @@ export default function handler(req, res) {
       timestamp: new Date().toISOString(),
       coreEngine: {
         url: process.env.ZK_PRET_CORE_ENGINE_URL || 'https://zkpretcore.vercel.app',
-        connected: true
+        connected: true,
+        status: 'online'
       },
       features: {
         health: true,
         status: true,
         proxy: true,
-        cors: true
+        cors: true,
+        serverless: true
+      },
+      environment: {
+        nodeVersion: process.version,
+        platform: 'vercel',
+        region: process.env.VERCEL_REGION || 'unknown'
       }
     });
   }
@@ -50,23 +59,53 @@ export default function handler(req, res) {
   if (url === '/api/v1/tools') {
     return res.status(200).json({
       success: true,
+      server: 'zk-pret-http-server',
       tools: [
-        'health-check',
-        'proxy-to-core-engine'
+        {
+          name: 'health-check',
+          endpoint: '/api/health',
+          description: 'Server health monitoring'
+        },
+        {
+          name: 'status-check',
+          endpoint: '/api/v1/status',
+          description: 'Detailed server status'
+        },
+        {
+          name: 'core-engine-proxy',
+          endpoint: 'proxy-to-core',
+          description: 'Proxy requests to Core Engine'
+        }
       ],
       coreEngineTools: [
-        'get-GLEIF-verification-with-sign',
-        'get-Corporate-Registration-verification-with-sign',
-        'get-EXIM-verification-with-sign'
+        {
+          name: 'GLEIF Verification',
+          endpoint: 'https://zkpretcore.vercel.app/api/gleif',
+          description: 'Legal Entity Identifier verification'
+        },
+        {
+          name: 'Corporate Registration',
+          endpoint: 'https://zkpretcore.vercel.app/api/corporate',
+          description: 'Corporate registration verification'
+        },
+        {
+          name: 'EXIM Verification',
+          endpoint: 'https://zkpretcore.vercel.app/api/exim',
+          description: 'Export-Import verification'
+        },
+        {
+          name: 'Risk Assessment',
+          endpoint: 'https://zkpretcore.vercel.app/api/risk',
+          description: 'Risk and liquidity assessment'
+        }
       ],
-      count: 2,
+      count: 3,
       timestamp: new Date().toISOString(),
-      server: 'zk-pret-http-server',
       mode: 'vercel-serverless'
     });
   }
 
-  // Default response
+  // Default response for any other route
   return res.status(200).json({
     message: 'ZK-PRET HTTP Server',
     service: 'zk-pret-http-server',
@@ -76,10 +115,17 @@ export default function handler(req, res) {
     method: req.method,
     url: req.url,
     coreEngine: process.env.ZK_PRET_CORE_ENGINE_URL || 'https://zkpretcore.vercel.app',
-    endpoints: [
+    availableEndpoints: [
       '/api/health - Health check',
       '/api/v1/status - Server status',
       '/api/v1/tools - Available tools'
+    ],
+    coreEngineEndpoints: [
+      'https://zkpretcore.vercel.app/api/health',
+      'https://zkpretcore.vercel.app/api/gleif',
+      'https://zkpretcore.vercel.app/api/corporate',
+      'https://zkpretcore.vercel.app/api/exim',
+      'https://zkpretcore.vercel.app/api/risk'
     ]
   });
 }
