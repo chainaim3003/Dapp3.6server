@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "HTTP Server for ZK-PRET tools - Vercel serverless functions",
   "main": "api/index.js",
-  "type": "module",
   "scripts": {
-    "build": "echo 'No build needed for Vercel serverless functions'",
-    "start": "node api/index.js",
-    "dev": "node api/index.js"
+    "build": "mkdir -p dist && echo 'Serverless build complete' > dist/build.txt",
+    "start": "node api/index.js"
   },
   "dependencies": {
     "@vercel/node": "^3.0.0"
