@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZK-PRET HTTP Server</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; margin-bottom: 20px; }
+        .endpoint { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #007bff; }
+        .status { color: #28a745; font-weight: bold; }
+        code { background: #e9ecef; padding: 2px 6px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 ZK-PRET HTTP Server</h1>
+        <p class="status">✅ Status: Online and Ready</p>
+        <p><strong>Version:</strong> 1.0.0</p>
+        <p><strong>Mode:</strong> Vercel Serverless</p>
+        
+        <h2>📡 Available API Endpoints:</h2>
+        
+        <div class="endpoint">
+            <strong>Health Check:</strong><br>
+            <code>GET /api/health</code><br>
+            <small>Returns server health status and configuration</small>
+        </div>
+        
+        <div class="endpoint">
+            <strong>Server Status:</strong><br>
+            <code>GET /api/v1/status</code><br>
+            <small>Returns detailed server information and features</small>
+        </div>
+        
+        <div class="endpoint">
+            <strong>Available Tools:</strong><br>
+            <code>GET /api/v1/tools</code><br>
+            <small>Lists all available ZK-PRET tools and capabilities</small>
+        </div>
+        
+        <h2>🔗 Core Engine Connection:</h2>
+        <p>Connected to: <code>https://zkpretcore.vercel.app</code></p>
+        
+        <h2>🧪 Quick Test:</h2>
+        <p>Try these endpoints:</p>
+        <ul>
+            <li><a href="/api/health" target="_blank">/api/health</a></li>
+            <li><a href="/api/v1/status" target="_blank">/api/v1/status</a></li>
+            <li><a href="/api/v1/tools" target="_blank">/api/v1/tools</a></li>
+        </ul>
+        
+        <hr style="margin: 30px 0;">
+        <small>🔧 ZK-PRET HTTP Server - Serverless build complete</small>
+    </div>
+</body>
+</html>

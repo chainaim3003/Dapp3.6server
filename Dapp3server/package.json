@@ -4,7 +4,7 @@
   "description": "HTTP Server for ZK-PRET tools - Vercel serverless functions",
   "main": "api/index.js",
   "scripts": {
-    "build": "mkdir -p dist && echo 'Serverless build complete' > dist/build.txt",
+    "build": "mkdir -p public && echo 'Serverless build complete - API functions ready' > public/index.html",
     "start": "node api/index.js"
   },
   "dependencies": {
