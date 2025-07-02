@@ -1,25 +1,16 @@
 {
   "name": "zk-pret-http-server",
   "version": "1.0.0",
-  "description": "HTTP Server for ZK-PRET tools - provides HTTP API access to ZK-PRET functionality",
+  "description": "HTTP Server for ZK-PRET tools - Vercel serverless functions",
   "main": "api/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "echo 'No build needed for Vercel serverless functions'",
     "start": "node api/index.js",
-    "dev": "tsx watch api/index.ts"
+    "dev": "node api/index.js"
   },
   "dependencies": {
-    "@vercel/node": "^3.0.0",
-    "axios": "^1.6.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "typescript": "^5.8.3"
-  },
-  "devDependencies": {
-    "@types/node": "^20.10.4",
-    "tsx": "^4.19.4"
+    "@vercel/node": "^3.0.0"
   },
   "engines": {
     "node": ">=18.0.0"
