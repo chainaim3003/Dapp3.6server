@@ -1,29 +1,11 @@
 {
   "version": 2,
   "functions": {
-    "dist/*.js": {
+    "api/*.js": {
       "memory": 1024,
       "maxDuration": 300
     }
   },
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/dist/unified-server.js"
-    },
-    {
-      "source": "/ws",
-      "destination": "/dist/unified-server.js"
-    },
-    {
-      "source": "/health",
-      "destination": "/dist/unified-server.js"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/dist/unified-server.js"
-    }
-  ],
   "headers": [
     {
       "source": "/api/(.*)",
