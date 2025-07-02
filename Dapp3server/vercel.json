@@ -1,41 +1,29 @@
 {
   "version": 2,
-  "name": "zk-pret-http-server",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node@3"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/dist/unified-server.js"
-    },
-    {
-      "src": "/ws",
-      "dest": "/dist/unified-server.js"
-    },
-    {
-      "src": "/health",
-      "dest": "/dist/unified-server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/dist/unified-server.js"
-    }
-  ],
   "functions": {
-    "dist/unified-server.js": {
-      "runtime": "@vercel/node@3",
+    "dist/*.js": {
       "memory": 1024,
       "maxDuration": 300
     }
   },
-  "env": {
-    "NODE_ENV": "production",
-    "ZK_PRET_HTTP_SERVER_HOST": "0.0.0.0"
-  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/dist/unified-server.js"
+    },
+    {
+      "source": "/ws",
+      "destination": "/dist/unified-server.js"
+    },
+    {
+      "source": "/health",
+      "destination": "/dist/unified-server.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/dist/unified-server.js"
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",
